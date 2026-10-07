@@ -19,6 +19,7 @@ Ground it in domain rules, requirements, design sources, public API meaning, or 
 
 ## Evaluate the concept
 
+When introducing or reviewing a named concept, evaluate that concept.
 During refactoring, evaluate the named concepts in the affected implementation path, including concepts that remain in place.
 
 For each concept:
