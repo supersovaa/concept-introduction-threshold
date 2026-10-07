@@ -1,27 +1,33 @@
 ---
 name: concept-introduction-threshold
-description: Evaluate new named abstractions and implementation concepts by requiring them to represent established meaning or materially simplify the implementation. Use when adding or reviewing wrappers, shared enums or structs, contexts, policies, constraints, traits, intermediate models, or similar abstractions.
+description: Evaluate named abstractions and implementation concepts by requiring them to represent established meaning or materially simplify the implementation. Use during refactoring and when adding or reviewing wrappers, shared enums or structs, contexts, policies, constraints, traits, intermediate models, or similar abstractions.
 ---
 
 # Concept Introduction Threshold
 
-Use a new concept when it earns its place through meaning or simplification.
+Use a concept when it earns its place through meaning or simplification.
 
 ## Core rule
 
-Any new concept introduced into the implementation must either directly represent an established meaning or materially simplify the implementation.
+Every named concept in the affected implementation must either directly represent an established meaning or materially simplify the implementation.
 
 Treat similar code shape as a signal to examine shared processing.
 Establish a shared concept when the participating uses also share meaning or when the concept produces a clear simplification across the affected implementation.
 
+Established meaning exists independently of the implementation concept.
+Ground it in domain rules, requirements, design sources, public API meaning, or actual use cases that already distinguish it.
+
 ## Evaluate the concept
 
-Before introducing a named concept:
+When introducing or reviewing a named concept, evaluate that concept.
+During refactoring, evaluate the named concepts in the affected implementation path, including concepts that remain in place.
 
-1. State the meaning or responsibility the concept represents.
+For each concept:
+
+1. Identify the independent source of established meaning it represents.
 2. Identify the concrete simplification it provides.
-3. Compare the affected implementation before and after the concept.
-4. Keep semantic distinctions available wherever later behavior depends on them.
+3. Compare the whole affected path using the concept with the most direct concrete alternative.
+4. Compare wrappers, shared representations, and intermediate models with an alternative that keeps the original concrete distinctions and shares only the common mechanism.
 5. Choose the narrowest representation that provides the identified value.
 
 A concept can justify itself through either established meaning or implementation simplification.
@@ -48,7 +54,7 @@ When several concrete types or use cases share processing while retaining differ
 
 Generics, helper functions, traits, tables, or other language-appropriate mechanisms can share processing while preserving concrete distinctions.
 
-When a shared representation requires `kind`, flags, policies, contexts, repeated matching, or similar information to recover distinctions already carried by the original inputs, compare that representation with keeping the distinctions explicit and sharing only the common mechanism.
+When a shared representation requires `kind`, flags, policies, contexts, repeated matching, or similar information to recover distinctions already carried by the original inputs, use the original concrete distinctions as the comparison baseline and evaluate sharing only the common mechanism.
 
 ## Evaluate through actual uses
 
@@ -57,9 +63,13 @@ Use the real use cases as the primary evidence that a shared concept preserves t
 Judge the concept by whether the affected uses remain direct to express and understand after the shared mechanism is introduced.
 Let the repository's testing workflow own test selection and implementation.
 
+## Complete the evaluation
+
+Complete this skill after the named implementation concepts in the affected path have been evaluated against the threshold.
+
 ## Responsibility boundary
 
-This skill owns the threshold for introducing a new implementation concept.
+This skill owns the threshold for introducing or retaining a named implementation concept in affected work.
 
 Domain rules and repository sources of truth own domain meaning.
 `prefer-static-decisions` owns the placement of known facts and choices into static or runtime representations.
