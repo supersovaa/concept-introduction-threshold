@@ -25,7 +25,7 @@ Before introducing a named concept:
 5. Choose the narrowest representation that provides the identified value.
 
 A concept can justify itself through either established meaning or implementation simplification.
-It does not need to provide both.
+Either condition is sufficient.
 
 ## Measure simplification across the whole path
 
@@ -40,7 +40,7 @@ Useful simplification can include:
 - making callers or public APIs simpler;
 - reducing the number of concepts required to understand the behavior.
 
-Use the whole-path comparison rather than the size of the shared helper alone.
+Base the decision on the whole-path comparison.
 
 ## Preserve meaningful distinctions
 
