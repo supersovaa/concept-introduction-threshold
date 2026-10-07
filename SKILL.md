@@ -50,12 +50,12 @@ Generics, helper functions, traits, tables, or other language-appropriate mechan
 
 When a shared representation requires `kind`, flags, policies, contexts, repeated matching, or similar information to recover distinctions already carried by the original inputs, compare that representation with keeping the distinctions explicit and sharing only the common mechanism.
 
-## Validate through actual uses
+## Evaluate through actual uses
 
 Use the real use cases as the primary evidence that a shared concept preserves the required meanings.
 
-Add focused tests for the shared mechanism when it has an independent contract.
-Keep use-case tests responsible for the meaning that belongs to each use.
+Judge the concept by whether the affected uses remain direct to express and understand after the shared mechanism is introduced.
+Let the repository's testing workflow own test selection and implementation.
 
 ## Responsibility boundary
 
