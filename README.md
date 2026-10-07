@@ -7,7 +7,7 @@ A lightweight skill for deciding when a new named concept earns a place in an im
 A new concept should directly represent established meaning or materially simplify the implementation.
 
 Treat structural similarity as a signal to look for shared processing.
-Establish a shared concept when the uses also share meaning or when the concept produces a clear whole-system simplification.
+Establish a shared concept when the uses also share meaning or when the concept produces a clear simplification across the affected implementation.
 
 ## Responsibility
 
