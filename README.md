@@ -9,8 +9,6 @@ A concept should directly represent established meaning or materially simplify t
 Treat structural similarity as a signal to look for shared processing.
 Establish a shared concept when the uses also share meaning or when the concept produces a clear simplification across the affected implementation.
 
-During refactoring, evaluate the named concepts in the affected implementation path, including concepts that remain in place.
-
 ## Responsibility
 
 `concept-introduction-threshold` owns the threshold for introducing or retaining named abstractions and implementation concepts in affected work.
