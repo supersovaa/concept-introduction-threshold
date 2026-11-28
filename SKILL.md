@@ -1,11 +1,11 @@
 ---
 name: concept-introduction-threshold
-description: Evaluate named abstractions and implementation concepts by requiring them to represent established meaning or materially simplify the implementation. Use during refactoring and when adding or reviewing wrappers, shared enums or structs, contexts, policies, constraints, traits, intermediate models, or similar abstractions.
+description: Use when adding abstractions, refactoring code, or reviewing an implementation. Assess the value of named implementation concepts.
 ---
 
 # Concept Introduction Threshold
 
-Use a concept when it earns its place through meaning or simplification.
+When the affected path introduces, uses, or retains a named concept, evaluate it for established meaning or material simplification. This includes wrappers, shared enums and structs, contexts, policies, constraints, traits, and intermediate models.
 
 ## Core rule
 
