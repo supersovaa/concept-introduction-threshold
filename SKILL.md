@@ -1,6 +1,6 @@
 ---
 name: concept-introduction-threshold
-description: When adding, refactoring, or reviewing a named abstraction, judge whether it captures established meaning or materially simplifies the implementation.
+description: Evaluate new or reviewed abstractions and existing named concepts along a refactored path. Keep those that represent established meaning or materially simplify implementation.
 ---
 
 # Concept Introduction Threshold
