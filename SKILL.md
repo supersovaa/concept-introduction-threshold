@@ -1,11 +1,11 @@
 ---
 name: concept-introduction-threshold
-description: Evaluate new or reviewed abstractions and existing named concepts along a refactored path. Keep those that represent established meaning or materially simplify implementation.
+description: Use when adding abstractions, refactoring code, or reviewing an implementation. Assess the value of named implementation concepts.
 ---
 
 # Concept Introduction Threshold
 
-Apply this test to new or existing concepts, including wrappers, shared enums and structs, contexts, policies, constraints, traits, and intermediate models.
+When the affected path introduces, uses, or retains a named concept, evaluate it for established meaning or material simplification. This includes wrappers, shared enums and structs, contexts, policies, constraints, traits, and intermediate models.
 
 ## Core rule
 
